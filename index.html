@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function () {
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#"]').click(function () {
+                // スクロールの速度
+                var speed = 400; // ミリ秒で記述
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+    <title>Shuuun</title>
+</head>
+
+<body>
+    <header>
+        <nav id="gnav">
+            <div class="nav-box">
+                <div class="logo c_black1">
+                    <a href="index.html">
+                        <figure><img src="img/logo.png" alt="ロゴ"></figure>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#about" class="c_black1">ABOUT</a></li>
+                    <li><a href="#works" class="c_black1">WORKS</a></li>
+                    <li><a href="#contact" class="c_black1">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-vsrl c_white">
+            <div class="text-box">
+                <img src="img/icon2.png" alt="アイコン">
+                <!-- <h1>Shun Furukawa</h1>
+                <p>Portfolio</p> -->
+                <h1>Shun Furukawa</h1>
+                <p>Portfolio</p>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="content-wrap">
+            <!-- ---------------------ABOUT-------------------------- -->
+            <h2 id="about" class="c_white"><span>ABOUT</span></h2>
+            <div class="about-container">
+                <div class="about_content-box">
+                    <div class="about_img-box">
+                        <figure><img src="img/shun.jpg" alt="プロフィール画像"></figure>
+                    </div>
+                    <div class="about_text-box">
+                        <div class="text1">
+                            <h5>Shun furukawa</h5>
+                            <h3>古川 駿</h3>
+                        </div>
+                        <div class="text2">
+                            <h4>Profile</h4>
+                            <p>生年月日：1994.5.29<br>広島県の離島生まれ<br>東京都 在住</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text3 c_white ts_16">
+                <p>広島県出身の25歳。2019年から新たな環境に身を置く為に上京。<br>
+                    デザインやイラストで『人の心を動かすデザイナー』を目指し、日々成長中。</p>
+                </div>
+
+                <div class="btn"><a href="about.html">About me! ></a></div>
+            </div>
+
+
+
+            <!-- ---------------------WORKS-------------------------- -->
+            <section id="works" class="c_white">
+                <h2 id="works" class="c_white"><span>WORKS</span></h2>
+
+                <!-- ---------------------logo-------------------------- -->
+                <section id="logo">
+                    <h3><span></span>Logo</h3>
+                    <div class="works-container">
+
+                        <div class="work-card">
+                            <a href="img/ph_l_1.jpg" data-lightbox="image-1" data-title="自分のロゴ">
+                                <div class="card_img"><img src="img/ph_l_1.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：自分のロゴ</h4>
+                                    <p>制作時間：8時間</p>
+                                    <p>大好きな野球のロゴをイメージしました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_l_2.jpg" data-lightbox="image-1" data-title="ブランドのイメージキャラクター">
+                                <div class="card_img"><img src="img/ph_l_2.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>制作依頼：ブランドのイメージキャラクター</h4>
+                                    <p>制作時間：6時間</p>
+                                    <p>依頼通りのやんちゃなキャラクターになりました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_l_3.jpg" data-lightbox="image-1" data-title="草野球チームのロゴ">
+                                <div class="card_img"><img src="img/ph_l_3.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>制作依頼：草野球チームのロゴ</h4>
+                                    <p>制作時間：4時間</p>
+                                    <p>『チーム一丸で頂点を目指す』がコンセプトです</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_l_4.jpg" data-lightbox="image-1" data-title="「FACE GUARD」ロゴ">
+                                <div class="card_img"><img src="img/ph_l_4.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：「FACE GUARD」ロゴ</h4>
+                                    <p>制作時間：4時間</p>
+                                    <p>近年野球界で流行りのフェイスガードをロゴにしました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_l_5.jpg" data-lightbox="image-1" data-title="草野球リーグのロゴ">
+                                <div class="card_img"><img src="img/ph_l_5.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>アルバイト制作：草野球リーグのロゴ</h4>
+                                    <p>制作時間：6時間</p>
+                                    <p>アルバイトで草野球リーグのロゴを提案しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-----------------------graphic--------------------------->
+                <section id="graphic">
+                    <h3>Graphic</h3>
+
+                    <div class="works-container">
+
+                        <div class="work-card">
+                            <a href="img/ph_g_6.jpg" data-lightbox="image-1" data-title="Facebook ヘッダー制作">
+                                <div class="card_img"><img src="img/ph_g_6.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>制作依頼：Facebook ヘッダー制作</h4>
+                                    <p>制作時間：6時間</p>
+                                    <p>沖縄の雰囲気が伝わるイラストを描きました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                                <a href="img/ph_g_2.jpg" data-lightbox="image-1" data-title="ウェルカムボード">
+                                    <div class="card_img"><img src="img/ph_g_2.jpg" alt="ph1"></div>
+                                    <div class="card_info c_black2">
+                                        <h4>制作依頼：ウェルカムボード</h4>
+                                        <p>制作時間：8時間</p>
+                                        <p>似顔絵と手書き文字、薔薇のイラストでデザインしました</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_g_3.jpg" data-lightbox="image-1" data-title="平成最後のフォント『ゃ』">
+                                <div class="card_img"><img src="img/ph_g_3.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>企画参加：平成最後のフォント『ゃ』</h4>
+                                    <p>制作時間：5時間</p>
+                                    <p>平成最後のフォント企画　小さい「ゃ」を担当しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_g_4.jpg" data-lightbox="image-1" data-title="平成最後のフォント 使用見本例">
+                                <div class="card_img"><img src="img/ph_g_4.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>企画参加：平成最後のフォント 使用見本例</h4>
+                                    <p>制作時間：7時間</p>
+                                    <p>平成の日本を支えた「JK」をテーマにしました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                                <a href="img/ph_g_1.jpg" data-lightbox="image-1" data-title="自分の名刺">
+                                    <div class="card_img"><img src="img/ph_g_1.jpg" alt="ph1"></div>
+                                    <div class="card_info c_black2">
+                                        <h4>自主制作：自分の名刺</h4>
+                                        <p>制作時間：12時間</p>
+                                        <p>プロ野球チップスカードをモチーフにしました</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_g_5.jpg" data-lightbox="image-1" data-title="「令和」タイポグラフィー">
+                                <div class="card_img"><img src="img/ph_g_5.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：「令和」タイポグラフィー</h4>
+                                    <p>制作時間：4時間</p>
+                                    <p>「令和」の文字で十二単の女性を表しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                </section>
+                <!-- ---------------------banner---------------------------->
+                <section id="banner">
+                    <h3>Banner</h3>
+
+                    <div class="works-container">
+
+                        <div class="work-card">
+                            <a href="img/ph_b_1.jpg" data-lightbox="image-1" data-title="温泉のバナー">
+                                <div class="card_img"><img src="img/ph_b_1.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：温泉のバナー</h4>
+                                    <p>制作時間：6時間</p>
+                                    <p>秋を感じる色合いを意識しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_b_2.jpg" data-lightbox="image-1" data-title="美容品のバナー">
+                                <div class="card_img"><img src="img/ph_b_2.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>コンペ参加：美容品のバナー</h4>
+                                    <p>制作時間：6時間</p>
+                                    <p>大人の女性をイメージしました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_b_3.jpg" data-lightbox="image-1" data-title="ハンバーガーのバナー">
+                                <div class="card_img"><img src="img/ph_b_3.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：ハンバーガーのバナー</h4>
+                                    <p>制作時間：5時間</p>
+                                    <p>クリスマス感のある色合いを意識しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_b_4.jpg" data-lightbox="image-1" data-title="バレンタインのバナー">
+                                <div class="card_img"><img src="img/ph_b_4.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：バレンタインのバナー</h4>
+                                    <p>制作時間：4時間</p>
+                                    <p>フォントなどで女の子らしさを表しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_b_5.jpg" data-lightbox="image-1" data-title="遊園地のバナー">
+                                <div class="card_img"><img src="img/ph_b_5.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：遊園地のバナー</h4>
+                                    <p>制作時間：7時間</p>
+                                    <p>パステルカラーを使用し楽しい雰囲気を出しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-card">
+                            <a href="img/ph_b_6.jpg" data-lightbox="image-1" data-title="ドーナツ屋さんのバナー">
+                                <div class="card_img"><img src="img/ph_b_6.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>自主制作：ドーナツ屋さんのバナー</h4>
+                                    <p>制作時間：6時間</p>
+                                    <p>3種類のサイズ展開に挑戦しました</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ---------------------illustration---------------------------->
+                <section id="illustration" class="c_white">
+                    <h3>Illustration</h3>
+                    <div class="works-container">
+                        <div class="work-card">
+                            <a href="img/ph_i_1.jpg" data-lightbox="image-1" data-title="イラスト描きます">
+                                <div class="card_img"><img src="img/ph_i_1.jpg" alt="ph1"></div>
+                                <div class="card_info c_black2">
+                                    <h4>イラストレーション</h4>
+                                    <p>Illustratorを使用してイラストを描いています</p>
+                                    <p>似顔絵やデフォルメキャラクターなどが得意です</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- ---------------------Contact---------------------------->
+            <h2 id="contact" class="c_white"><span>CONTACT</span></h2>
+            <div class="contact-box btn"><a href="mailto:shuuun.f@gmail.com"><img src="img/mail.png" alt="メールアドレス"></a>
+            </div>
+
+        </div>
+        <div id="page_top"><a href="#"></a></div>
+
+    </main>
+
+    <footer>
+        <small><span>&copy;</span>2019 Shun Furukawa</small>
+    </footer>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
